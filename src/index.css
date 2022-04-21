@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  padding-inline: 15%;
+  background-color: #1888c7;
+}
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  border: none;
+}
+
+.card-item {
+  border: 5px;
+  background-color: aliceblue;
+  border-radius: 5%;
+}
+
+.img-section {
+  height: 250px;
+}
+.img-section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5% 5% 0 0;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.card-compenet {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+
+}
+.btn-load {
+  margin: 10px;
+  padding: 10px;
+  background-color: #1888c7;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+/*  */
+.navbar-container{
+  position: fixed;
+  right: 20px;
+   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1888c7;
+  padding: 2rem;
+
+}
+.url{
+  margin: 1rem;
+}
+.input-container {
+  position: relative;
+  height: 3rem;
+  width: 50%;
+}
+.input-field {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding-left: 1rem;
+  background-color: #1888c7;
+  border: 1px white solid;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: large;
+  color: antiquewhite;
+  
+}
+.input-container button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: large;
+  color: antiquewhite;
+  cursor: pointer;
+  top: 17px;
+  right: 0px;
+}
+
+
+@media screen and (max-width: 1080px) {
+  .card-compenet {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+  
+  }
+  
+}
+@media screen and (max-width: 780px) {
+  .card-compenet {
+    
+    grid-template-columns: 1fr 1fr;
+  
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  .card-compenet {
+    grid-template-columns: 1fr;
+  }
+  .input-container{
+    width: 80%;
+  }
+  
+}
