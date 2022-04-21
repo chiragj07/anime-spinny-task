@@ -50,7 +50,7 @@ iframe {
 }
 
 .card-compenet {
-  margin-top: 10rem;
+  margin-top: 12rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5rem;
@@ -70,8 +70,8 @@ iframe {
 /*  */
 .navbar-container{
   position: fixed;
-  right: 20px;
-   width: 100%;
+  right: 10px; 
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,6 +82,12 @@ iframe {
 }
 .url{
   margin: 1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:1rem;
+  padding-left: 1rem;
+  color: white;
 }
 .input-container {
   position: relative;
@@ -128,6 +134,10 @@ iframe {
     grid-template-columns: 1fr 1fr;
   
   }
+  .url{
+    flex-direction: column;
+    text-align: center;
+  }
   
 }
 @media screen and (max-width: 500px) {
@@ -135,7 +145,15 @@ iframe {
     grid-template-columns: 1fr;
   }
   .input-container{
-    width: 80%;
+    width: 70%;
   }
+  .navbar-container{
+    right: 5px;
+  }
+  .url{
+    flex-direction: column;
+    text-align: center;
+  }
+  
   
 }

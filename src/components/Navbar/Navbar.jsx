@@ -11,7 +11,9 @@ const Navbar = () => {
         <input class="input-field" value={inputValue} type="text" onChange={(e)=>setInputValue(e.target.value)}></input>
         <button onClick = {()=> dispatch(fetchAnime(1,inputValue))}>GO</button>
       </div>
-      <div className='url'> <b>Requesting : </b>{state.searchedAnime.query ?  state.searchedAnime.url : state.anime.url} </div>
+      <div className='url'> <div>Requested :</div> 
+        <div>{state.searchedAnime.query ?  state.searchedAnime.url : state.anime.url} </div>
+      </div>
      </div>
    
   )
